@@ -14,17 +14,17 @@
   $ergebnis [] = "";                  // Array für das Ergnis
  
   if($eingabeZahl>3000 || $eingabeZahl < 1){  // Begrenzung der Zahleingabe
-    echo "Bitte wählen Sie erneut eine Zahl zwischen 1 und 3000";
+    echo "Bitte wählen Sie erneut eine Zahl zwischen 1 und 3000"; //Ausgabe
   }  
   else{                                   // Hier läuft die Begrechnung los, falls die Begrenzung nicht zutrifft.
-    echo $eingabeZahl;
-    echo " = ";
+    echo $eingabeZahl;                    //Ausgabe
+    echo " = ";                           //Ausgabe
   for ($i = 0; $eingabeZahl > 0; $i++){   // For-Schleife läuft solange bis $i kleiner als die Eingabezahl ist
   if ($eingabeZahl >= $wert[$i]){         // If-Abfrage Berechnung startet, falls die Eingabezahl größer/gleich als die erste Zahl vom Array $Wert ist. Falls sie kleiner ist, startet die Vorschleife einfach die zweite Runde und vergleicht es mit der zweiten Zahl vom Array $Wert ... etc.
   $eingabeZahl -= $wert[$i];              // Wert wird von der Eingabe substrahiert
   $ergebnis [$i] = $roemisch[$i];         // Array Ergebnis wird mit den Werten gefüllt
   echo $ergebnis[$i];                     // Gibt den Wert aus 
-  $i -= 1;                                // Setzt $i zurück, um zu überprüfen, ob der immer noch größer ist als der selbe Werte. z.B. 200 ist >= als 100 und nach 200 - 100 trifft es danach nochmal zu.
+  $i -= 1;                                // Setzt $i zurück, um zu überprüfen, ob der immer noch größer ist als der selbe Wert. z.B. 200 ist >= als 100 und nach 200 - 100 trifft es danach nochmal zu.
   }
   }
 }
