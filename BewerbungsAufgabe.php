@@ -19,7 +19,7 @@
   else{                                   // Hier läuft die Begrechnung los, falls die Begrenzung nicht zutrifft.
     echo $eingabeZahl;                    //Ausgabe
     echo " = ";                           //Ausgabe
-  for ($i = 0; $eingabeZahl > 0; $i++){   // For-Schleife läuft solange bis $i kleiner als die Eingabezahl ist
+  for ($i = 0; $eingabeZahl > 0; $i++){   // For-Schleife läuft, solange die Eingabezahl größer als 0 ist
   if ($eingabeZahl >= $wert[$i]){         // If-Abfrage Berechnung startet, falls die Eingabezahl größer/gleich als die erste Zahl vom Array $Wert ist. Falls sie kleiner ist, startet die Vorschleife einfach die zweite Runde und vergleicht es mit der zweiten Zahl vom Array $Wert ... etc.
   $eingabeZahl -= $wert[$i];              // Wert wird von der Eingabe substrahiert
   $ergebnis [$i] = $roemisch[$i];         // Array Ergebnis wird mit den Werten gefüllt
