@@ -1,7 +1,7 @@
 
 
-<body class="d-block text-center justify-content-center">
-<div class="container-xxl text-center d-flex justify-content-center" >
+<body class=" d-block text-center justify-content-center">
+<div class=" container-xxl text-center d-flex justify-content-center" >
 
 <form action='BewerbungsAufgabe.php' method='post'>
   <div class="mb-1">
