@@ -1,5 +1,3 @@
-
-
 <?php 
 
   include('./template/head.php');      // Headbereich
@@ -23,7 +21,7 @@
   if ($eingabeZahl >= $wert[$i]){         // If-Abfrage Berechnung startet, falls die Eingabezahl größer/gleich als die erste Zahl vom Array $Wert ist. Falls sie kleiner ist, startet die Vorschleife einfach die zweite Runde und vergleicht es mit der zweiten Zahl vom Array $Wert ... etc.
   $eingabeZahl -= $wert[$i];              // Wert wird von der Eingabe substrahiert
   $ergebnis [$i] = $roemisch[$i];         // Array Ergebnis wird mit den Werten gefüllt
-  echo $ergebnis[$i];                     // Gibt den Wert aus 
+    echo $ergebnis[$i];                   // Gibt den Wert aus 
   $i -= 1;                                // Setzt $i zurück, um zu überprüfen, ob der immer noch größer ist als der selbe Wert. z.B. 200 ist >= als 100 und nach 200 - 100 trifft es danach nochmal zu.
   }
   }
